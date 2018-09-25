@@ -24,11 +24,21 @@
             right: 20px;
             top: 26px;
         }
+        .nav{
+            display: none;
+            background: grey;
+            margin-top: 10px;
+        }
+        .nav.active{
+            display: flex;  
+            justify-content: space-between;     
+        }
         .nav2{display: none;}
         @media (min-width: 451px){
             header > button{
             display: none;
             }
+            .nav, .nav.active{display: none;}
             .nav2{display: none;}
             header{
                 display: flex;
@@ -43,15 +53,7 @@
                 margin: 0 10px;
             }
         }
-        .nav{
-            display: none;
-            background: grey;
-            margin-top: 10px;
-        }
-        .nav.active{
-            display: flex;  
-            justify-content: space-between;     
-        }
+       
     </style>
 </head>
 <body>
